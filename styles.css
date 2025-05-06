@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Micolesther Free Regular";
+  font-size: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  cursor: url("data:image/svg+xml,%3Csvg shape-rendering='geometricPrecision' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath fill='%23f81ce5' d='M9.63 6.9a1 1 0 011.27-1.27l11.25 3.75a1 1 0 010 1.9l-4.68 1.56a1 1 0 00-.63.63l-1.56 4.68a1 1 0 01-1.9 0L9.63 6.9z'/%3E%3Cpath stroke='%23fff' stroke-width='1.5' d='M11.13 4.92a1.75 1.75 0 00-2.2 2.21l3.74 11.26a1.75 1.75 0 003.32 0l1.56-4.68a.25.25 0 01.16-.16L22.4 12a1.75 1.75 0 000-3.32L11.13 4.92z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' width='32.26' height='32.26' x='.08' y='.08' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='4'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0'/%3E%3CfeBlend in2='BackgroundImageFix' mode='normal' result='effect1_dropShadow'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_dropShadow' mode='normal' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E") 6 2, default;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Trend Sans One Regular";
+}
+
+span {
+  color: white;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  z-index: 999;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+  padding: 20px;
+}
+.nav-item img {
+  position: absolute;
+  z-index: -1;
+  height: 50px;
+  width: 50px;
+  top: -10px;
+  left: 20px;
+}
+.nav-item .red {
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+#news {
+  display: flex;
+  padding-top: 20px;
+}
+#news .main-news {
+  background-image: url("./images/multi1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+}
+#news .main-news h1 {
+  font-size: 3rem;
+  font-family: "Trend Sans One Regular";
+}
+#news .actuality {
+  padding: 10px;
+}
+#news .actuality h2 {
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-family: "Trend Sans One Regular";
+}
+
+#presentation {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row-reverse;
+}
+#presentation .main-presentation {
+  background-image: url("./images/multi2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+}
+#presentation .main-presentation h2 {
+  font-size: 3rem;
+  font-family: "Trend Sans One Regular";
+}
+#presentation .content-presentation {
+  padding: 10px;
+  width: 60%;
+}
+#presentation .content-presentation h3 {
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  margin: 10px 0 5px 0;
+  font-family: "Trend Sans One Regular";
+}
+
+#horaires {
+  display: flex;
+  padding-top: 20px;
+}
+#horaires .main-horaires {
+  background-image: url("./images/multi3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+}
+#horaires .main-horaires h2 {
+  font-size: 3rem;
+  font-family: "Trend Sans One Regular";
+}
+#horaires .content-horaires {
+  width: 60%;
+  padding: 10px;
+}
+#horaires .content-horaires h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-family: "Trend Sans One Regular";
+}
+#horaires .content-horaires h4 {
+  padding: 2px;
+}
+#horaires .content-horaires p {
+  padding-top: 10px;
+}
+
+footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+footer h3 {
+  font-family: "Trend Sans One Regular";
+}
+footer .reseau {
+  padding: 5px 0;
+}
+footer .reseau img {
+  height: 50px;
+  width: 50px;
+  margin: 0 20px;
+}
+footer p {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #news {
+    flex-direction: column;
+  }
+  #news .main-news {
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+  }
+  #presentation {
+    flex-direction: column;
+  }
+  #presentation .main-presentation {
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+  }
+  #presentation .content-presentation {
+    width: 100%;
+  }
+  #horaires {
+    flex-direction: column;
+  }
+  #horaires .main-horaires {
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #horaires .content-horaires {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
