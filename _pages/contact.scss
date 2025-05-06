@@ -1,0 +1,21 @@
+#contact{
+    h1{
+        font-family: "Trend Sans One Regular";
+        background-image: url('../images/multi2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        overflow: visible;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    h2{
+        padding: 10px;
+    }
+    .mail{
+        font-family: "Micolesther Free Regular";
+    }
+}
