@@ -284,8 +284,9 @@ footer p {
   }
   #presentation .main-presentation {
     background-size: cover;
-    height: 50px;
+    height: 70px;
     width: 100%;
+    text-align: center;
   }
   #presentation .content-presentation {
     width: 100%;
