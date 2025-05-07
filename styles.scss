@@ -1,5 +1,6 @@
+@use "./_pages/contact.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-@import './_pages/contact.scss';
+
 
 * {
   margin: 0;
@@ -81,6 +82,11 @@ img{
 
 .nav-item {
   position: relative;
+  &:hover{
+    img{
+      animation: rotate-90-vertical-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  }
   .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
@@ -330,3 +336,15 @@ footer {
     }
   }
 }
+
+@keyframes rotate-90-vertical-fwd {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
