@@ -191,6 +191,9 @@ img {
   margin: 10px 0 5px 0;
   font-family: "Trend Sans One Regular";
 }
+#presentation .content-presentation a {
+  font-size: 1.1rem;
+}
 
 #horaires {
   display: flex;
